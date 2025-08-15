@@ -1,0 +1,19 @@
+.ftco-section {
+  padding: 10em 0;
+}
+@media (max-width: 991px) {
+  .ftco-section {
+    padding: 3em 0;
+  }
+}
+.mobile_menu{
+  display: none;
+}
+@media (max-width: 767px) {
+  .pc_menu{
+    display: none;
+  }
+  .mobile_menu{
+    display: block;
+  }
+}
