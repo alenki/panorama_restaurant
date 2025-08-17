@@ -7857,7 +7857,7 @@ h1, h2, h3, h4, h5,
 }
 @media only screen and (max-width: 767px) {
   .ftco-intro .wrap .info {
-    height: 275px;
+    height: 325px;
   }
   .ftco-intro .wrap .info .text{
     margin-bottom: 21px;
