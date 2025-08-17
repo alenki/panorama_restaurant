@@ -1,8 +1,8 @@
-.ftco-section {
+.pc_menu {
   padding: 10em 0;
 }
 @media (max-width: 991px) {
-  .ftco-section {
+  .pc_menu {
     padding: 3em 0;
   }
 }

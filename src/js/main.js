@@ -242,8 +242,8 @@ AOS.init({
 	$('.appointment_time').timepicker({
     timeFormat: 'HH:mm',
     interval: 30,
-    minTime: '9',
-    maxTime: '23',
+    minTime: '11:00',
+    maxTime: '23:00',
     defaultTime: '11',
     startTime: '10:00',
     dynamic: false,
