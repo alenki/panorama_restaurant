@@ -7301,7 +7301,7 @@ body {
   line-height: 1.8;
   font-weight: 300;
   color: gray;
-  /* background: url(../../images/bg_4.jpg) no-repeat fixed; */
+  /* background: url(../../images/bg_4.webp) no-repeat fixed; */
   /* background-position: center center; */
   /* background-size: cover;  */
   background-color: #000;}
@@ -7312,7 +7312,7 @@ body {
     width: 100%; }
 
 body:before {
- background: url(../../images/bg_4.jpg) center;
+ background: url(../../images/bg_4.webp) center;
  background-size: cover;
 
  content: "";
@@ -7981,14 +7981,14 @@ h1, h2, h3, h4, h5,
       font-size: 18px; }
       .pricing-entry .text h3 span {
         /* background: #151111;
-        background: url(../../images/bg_4.jpg) no-repeat fixed; */
+        background: url(../../images/bg_4.webp) no-repeat fixed; */
         padding-right: 20px; }
     .pricing-entry .text .price {
       width: 80px;
       color: #ad9186;
       text-align: right;
       /* background: #151111;
-      background: url(../../images/bg_4.jpg) no-repeat fixed; */
+      background: url(../../images/bg_4.webp) no-repeat fixed; */
       font-size: 16px; }
 
 .menu-entry {
@@ -8824,7 +8824,7 @@ textarea.form-control {
     opacity: .5; }
 @media only screen and (max-width: 768px) {
   #section-counter{
-    background-image: url(../../images/9.png) !important;
+    background-image: url(../../images/9.webp) !important;
   }
 }
 
