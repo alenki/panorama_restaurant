@@ -33,7 +33,20 @@
 		<link rel="stylesheet" href="src/css/icomoon.css">
 		<link rel="stylesheet" href="src/css/style.css">
 	</head>
-	<body>
+	<body onload="loading()" style="margin: 0; height: 100%; overflow: hidden">
+
+	<!-- Loading screen / Экран загрузки -->
+	<div id="ftco-loader" class="loadingScreen show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#dee2e6"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ad9186"/></svg></div>
+    <script>
+      function loading() {
+          document.body.style.margin = 0;
+          document.body.style.height = 0;
+          document.body.style.overflow = "auto";
+          document.querySelector(".loadingScreen").style.display = 'none';
+      }
+    </script>
+	
+
 		<!-- NAV -->
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container">
@@ -66,8 +79,8 @@
 
 				<div class="col-md-8 col-sm-12 text-center ftco-animate">
 					<span class="subheading">Добро пожаловать</span>
-				<h1 class="mb-4">В PANORAMA время течет мягче</h1>
-				<p class="mb-4 mb-md-5">Душевные разговоры. Изысканные блюда. Уникальные люди.</p>
+				<h1 class="mb-4">PANORAMA</h1>
+				<p class="mb-4 mb-md-5">На стыке гастрономического искусства и утончённого сервиса </p>
 				<p><a href="/menu/" class="btn btn-primary p-3 px-xl-4 py-xl-3">ПОСМОТРЕТЬ МЕНЮ</a></p>
 				</div>
 
@@ -83,7 +96,7 @@
 				<div class="col-md-8 col-sm-12 text-center ftco-animate">
 					<span class="subheading">Добро пожаловать</span>
 				<h1 class="mb-4">Удивительный вкус и красивое место</h1>
-				<p class="mb-4 mb-md-5">Проведите время с удовольствием вместе с нами</p>
+				<p class="mb-4 mb-md-5">Изящные десерты , где каждая деталь продумана до совершенства — от текстуры до подачи</p>
 				<p><a href="/menu/" class="btn btn-primary p-3 px-xl-4 py-xl-3">ПОСМОТРЕТЬ МЕНЮ</a></p>
 				</div>
 
@@ -99,7 +112,7 @@
 				<div class="col-md-8 col-sm-12 text-center ftco-animate">
 					<span class="subheading">Добро пожаловать</span>
 				<h1 class="mb-4">Горячий и готовый к подаче</h1>
-				<p class="mb-4 mb-md-5">Проводите теплые вечера вместе с нами</p>
+				<p class="mb-4 mb-md-5">Начните свое утро за уютным столиком на веранде «Панорамы»</p>
 				<p><a href="/menu/" class="btn btn-primary p-3 px-xl-4 py-xl-3">ПОСМОТРЕТЬ МЕНЮ</a></p>
 				</div>
 
@@ -188,11 +201,14 @@
 				</div>
 				<div>
 						<p>
-							Тихий звон посуды перекликается с приглушёнными голосами, а в воздухе смешиваются ароматы свежих трав с лёгкой дымкой от горячих стейков.
-							<br><br>
-							За кулисами повара движутся с отточенной грацией — каждый жест точен, как такт в старой джазовой мелодии. Здесь всё живёт в ритме неспешного, но полного жизни вечера.
-							<br><br>
-							PANORAMA. Время течет мягко.
+							«Панорама» — это…
+							<br>Несколько просторных залов
+							<br>Приятный интерьер
+							<br>Терраса с видом на озеро
+							<br>Живописный ландшафт
+							<br>Лучшие блюда кавказской и европейской кухни				
+							<br><br>Устраивайте праздники, наслаждайтесь видами и получайте удовольствие от вкуса
+							
 						</p>
 					</div>
 				</div>
@@ -207,11 +223,9 @@
 					<span class="subheading">Discover</span>
 					<h2 class="mb-4">НАШ МЕНЮ</h2>
 					<p class="mb-4">
-						Каждый вечер в PANORAMA – новый этюд, написанный светом люстр, что льется теплым золотом на полированное дерево.
+						Приятная обстановка «Панорамы» всегда вдохновляет на новые свершения и дарит чувство спокойствия
 						<br><br>
-						Ваш сдержанный смех, тихий шепот за столиком – это живые, трепетные мазки, ложащиеся на вечный, нерушимый холст этого места.
-						<br><br>
-						Здесь, в мерцающем полумраке, под аккомпанемент звенящего хрусталя и приглушенного гула бесед, мы пишем историю вместе – неторопливо, изысканно, вечер за вечером, пока последние лучи не растворятся в синеве, а настоящий миг не станет еще одной жемчужиной в ожерелье прошлого. 
+						Проведите сегодня свободные часы в наших уютных интерьерах за чашечкой домашнего чая и кусочком любимого десерта	
 					</p>
 					<p><a href="/menu/" class="btn btn-primary btn-outline-primary px-4 py-3">ПОСМОТРЕТЬ МЕНЮ</a></p>
 				</div>
@@ -323,7 +337,7 @@
 			<div class="col-md-7 heading-section ftco-animate text-center">
 				<span class="subheading">Discover</span>
 				<h2 class="mb-4">БЕСТСЕЛЛЕРЫ</h2>
-				<p>Здесь время текло медленней, а в полумраке уголков улыбались огоньки бокалов, словно за каждым столиком тлела своя непридуманная история.</p>
+				<p>Насладитесь нашими авторскими блюдами и напитками в любимой компании <br>«Панорама» всегда готова открыть свои двери для вас</p>
 			</div>
 			</div>
 			<div class="row">
@@ -331,40 +345,40 @@
 					<div class="bestseller-entry menu-entry d-flex flex-column align-items-center">
 							<div href="#" class="img" style="background-image: url(images/menu-1.png);"></div>
 							<div class="text text-center pt-4">
-								<h3><div href="#">Завтрак Бенедикта</div></h3>
-								<p>Все максимально натурально, полезно, вкусно и сочно. Все, как любят наши дорогие гости.</p>
+								<h3><div href="#">Салат с хрустящими баклажанами</div></h3>
+								<p>На протяжении нескольких лет остается фаворитом для наших гостей</p>
 							</div>
-							<p class="price mt-auto"><span>590р</span></p>
+							<p class="price mt-auto"><span>950р</span></p>
 						</div>
 				</div>
 				<div class="col-md-3">
 					<div class="bestseller-entry menu-entry d-flex flex-column align-items-center">
 							<div href="#" class="img" style="background-image: url(images/menu-2.png);"></div>
 							<div class="text text-center pt-4">
-								<h3><div href="#">Салат</div></h3>
-								<p>Салат с запеченной тыквой, бураттой и клюквенным конфи.</p>
+								<h3><div href="#">Далян</div></h3>
+								<p>Чтим традиции национальной кухни и сохраняем ваш любимый вкус</p>
 							</div>
-							<p class="price mt-auto"><span>440р</span></p>
+							<p class="price mt-auto"><span>250/290р</span></p>
 						</div>
 				</div>
 				<div class="col-md-3">
 					<div class="bestseller-entry menu-entry d-flex flex-column align-items-center">
 							<div href="#" class="img" style="background-image: url(images/menu-3.png);"></div>
 							<div class="text text-center pt-4">
-								<h3><div href="#">Хумус</div></h3>
-								<p>Хумус с вяленными томатами и греческим йогуртом - это настоящая игра вкусов и текстур.</p>
+								<h3><div href="#">«Анна Павлова»</div></h3>
+								<p>Воздушный, как облачко и белый, как снег</p>
 							</div>
-							<p class="price mt-auto"><span>590р</span></p>
+							<p class="price mt-auto"><span>640р</span></p>
 						</div>
 				</div>
 				<div class="col-md-3">
 					<div class="bestseller-entry menu-entry d-flex flex-column align-items-center">
 							<div href="#" class="img" style="background-image: url(images/menu-4.png);"></div>
 							<div class="text text-center pt-4">
-								<h3><div href="#">Глясе</div></h3>
-								<p>Охлажденный кофе с шариком мороженного. Готовится он, зачастую, на эспрессо.</p>
+								<h3><div href="#">Салат с телятиной и спаржей</div></h3>
+								<p>То, что нужно для разгулявшегося аппетита</p>
 							</div>
-							<p class="price mt-auto"><span>300р</span></p>
+							<p class="price mt-auto"><span>900р</span></p>
 						</div>
 				</div>
 			</div>
@@ -379,7 +393,7 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<span class="subheading">Отзывы</span>
 				<h2 class="mb-4">Что гости говорят</h2>
-				<p>&ldquo;Ищете место для приятного вечера? В PANORAMA Вы сможете насладиться вкусными блюдами и провести время в уютной обстановке&rdquo;</p>
+				<p>«Панорама» создает особые условия для самых незабываемых моментов<br>Приглашаем вас насладиться прекрасными видами и уникальной атмосферой</p>
 				</div>
 			</div>
 			</div>
@@ -392,9 +406,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="tlizam.jpg" alt="Аскер Мамхегов">
+						<img src="khabib.jpg" alt="Хабиб Нурмагомедов">
 						</div>
-						<div class="name align-self-center">Аскер Мамхегов<span class="position">@chef_umma.bar</span></div>
+						<div class="name align-self-center">Хабиб Нурмагомедов<span class="position">Чемпион UFC</span></div>
 					</div>
 				</div>
 				</div>
@@ -405,9 +419,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="tlizam.jpg" alt="Тлизамов Мухамед">
+						<img src="provodnikov.jpg" alt="Руслан Проводников">
 						</div>
-						<div class="name align-self-center">Тлизамов Мухамед <span class="position">@tlizamm</span></div>
+						<div class="name align-self-center">Руслан Проводников<span class="position">"Siberian Rocky" боксёр-профессионал</span></div>
 					</div>
 				</div>
 				</div>
@@ -418,9 +432,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="islam.png" alt="Ислам Махачев">
+						<img src="altunyan.jpg" alt="Алтунян Юрий">
 						</div>
-						<div class="name align-self-center">Ислам Махачев<span class="position">Чемпион UFC</span></div>
+						<div class="name align-self-center">Алтунян Юрий<span class="position">Хирург @dr_altunyan</span></div>
 					</div>
 				</div>
 				</div>
@@ -431,9 +445,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="khamzat.png" alt="Хамзат Чимаев">
+						<img src="stas.jpg" alt="Стас Михайлов">
 						</div>
-						<div class="name align-self-center">Хамзат Чимаев<span class="position">@khamzat_chimaev</span></div>
+						<div class="name align-self-center">Стас Михайлов<span class="position">@stas_mihailoff</span></div>
 					</div>
 				</div>
 				</div>
@@ -444,9 +458,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 					<div class="image mr-3 align-self-center">
-						<img src="ramazan.jpg" alt="Рамазан Коков">
+						<img src="tatyana.jpg" alt="Татаьяна Третьяк">
 					</div>
-					<div class="name align-self-center">Рамазан Коков<span class="position">Владелец ресторана «PANORAMA»</span></div>
+					<div class="name align-self-center">Татаьяна Третьяк<span class="position">Певица, ведущая @tatyanatretyak.ru</span></div>
 					</div>
 				</div>
 				</div>
@@ -512,7 +526,7 @@
 			<div class="row">
 			<div class="col-md-6">
 				<div class="ftco-footer-widget d-flex flex-column">
-				<h2 class="ftco-heading-2" style="margin-bottom: 20px; font-size: 1.5rem;">PANORAMA. Время течет мягко.</h2>
+				<h2 class="ftco-heading-2" style="margin-bottom: 20px; font-size: 1.5rem;">SEKREKOV STUD PROJECT</h2>
 				<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
 					<li class="ftco-animate"><a href="https://t.me/karafco"><span class="icon-telegram"></span></a></li>
 					<li class="ftco-animate"><a href="https://api.whatsapp.com/send/?phone=79993001458&text&type=phone_number&app_absent=0"><span class="icon-whatsapp"></span></a></li>
@@ -538,10 +552,7 @@
 		</div>
 		</footer>
 		<!-- End of FOOTER -->
-	
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
 	<script type="module" src="/src/js/owl.carousel.min.js"></script>

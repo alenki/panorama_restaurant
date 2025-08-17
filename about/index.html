@@ -30,7 +30,19 @@
     <link rel="stylesheet" href="../src/css/style.css">
 	<link rel="stylesheet" href="../src/css/about.css">
   </head>
-  <body>
+  <body onload="loading()" style="margin: 0; height: 100%; overflow: hidden">
+
+	<!-- Loading screen / Экран загрузки -->
+	<div id="ftco-loader" class="loadingScreen show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#dee2e6"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ad9186"/></svg></div>
+    <script>
+      function loading() {
+          document.body.style.margin = 0;
+          document.body.style.height = 0;
+          document.body.style.overflow = "auto";
+          document.querySelector(".loadingScreen").style.display = 'none';
+      }
+    </script>
+
   	<!-- NAV -->
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container">
@@ -80,11 +92,13 @@
 				</div>
 				<div>
 						<p>
-							Тихий звон посуды перекликается с приглушёнными голосами, а в воздухе смешиваются ароматы свежих трав с лёгкой дымкой от горячих стейков.
-							<br><br>
-							За кулисами повара движутся с отточенной грацией — каждый жест точен, как такт в старой джазовой мелодии. Здесь всё живёт в ритме неспешного, но полного жизни вечера.
-							<br><br>
-							PANORAMA. Время течет мягко.
+							«Панорама» — это…
+							<br>Несколько просторных залов
+							<br>Приятный интерьер
+							<br>Терраса с видом на озеро
+							<br>Живописный ландшафт
+							<br>Лучшие блюда кавказской и европейской кухни				
+							<br><br>Устраивайте праздники, наслаждайтесь видами и получайте удовольствие от вкуса
 						</p>
 					</div>
 				</div>
@@ -92,14 +106,14 @@
 		</section>
     
 
-		<section class="ftco-section img ftco-about-testimony" id="ftco-testimony" style="background-image: url(../images/4.png);"  data-stellar-background-ratio="0.5">
+		<section class="ftco-section img" id="ftco-testimony" style="background-image: url(../images/4.png);"  data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 			<div class="row justify-content-center mb-5">
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<span class="subheading">Отзывы</span>
 				<h2 class="mb-4">Что гости говорят</h2>
-				<p>&ldquo;Ищете место для приятного вечера? В PANORAMA Вы сможете насладиться вкусными блюдами и провести время в уютной обстановке&rdquo;</p>
+				<p>«Панорама» создает особые условия для самых незабываемых моментов<br>Приглашаем вас насладиться прекрасными видами и уникальной атмосферой</p>
 				</div>
 			</div>
 			</div>
@@ -112,9 +126,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="../tlizam.jpg" alt="Аскер Мамхегов">
+						<img src="../khabib.jpg" alt="Хабиб Нурмагомедов">
 						</div>
-						<div class="name align-self-center">Аскер Мамхегов<span class="position">@chef_umma.bar</span></div>
+						<div class="name align-self-center">Хабиб Нурмагомедов<span class="position">Чемпион UFC</span></div>
 					</div>
 				</div>
 				</div>
@@ -125,9 +139,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="../tlizam.jpg" alt="Тлизамов Мухамед">
+						<img src="../provodnikov.jpg" alt="Руслан Проводников">
 						</div>
-						<div class="name align-self-center">Тлизамов Мухамед <span class="position">@tlizamm</span></div>
+						<div class="name align-self-center">Руслан Проводников<span class="position">"Siberian Rocky" боксёр-профессионал</span></div>
 					</div>
 				</div>
 				</div>
@@ -138,9 +152,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="../islam.png" alt="Ислам Махачев">
+						<img src="../altunyan.jpg" alt="Алтунян Юрий">
 						</div>
-						<div class="name align-self-center">Ислам Махачев<span class="position">Чемпион UFC</span></div>
+						<div class="name align-self-center">Алтунян Юрий<span class="position">Хирург @dr_altunyan</span></div>
 					</div>
 				</div>
 				</div>
@@ -151,9 +165,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 						<div class="image mr-3 align-self-center">
-						<img src="../khamzat.png" alt="Хамзат Чимаев">
+						<img src="../stas.jpg" alt="Стас Михайлов">
 						</div>
-						<div class="name align-self-center">Хамзат Чимаев<span class="position">@khamzat_chimaev</span></div>
+						<div class="name align-self-center">Стас Михайлов<span class="position">@stas_mihailoff</span></div>
 					</div>
 				</div>
 				</div>
@@ -164,9 +178,9 @@
 					</blockquote>
 					<div class="author d-flex mt-4">
 					<div class="image mr-3 align-self-center">
-						<img src="../ramazan.jpg" alt="Рамазан Коков">
+						<img src="../tatyana.jpg" alt="Татаьяна Третьяк">
 					</div>
-					<div class="name align-self-center">Рамазан Коков<span class="position">Владелец ресторана «PANORAMA»</span></div>
+					<div class="name align-self-center">Татаьяна Третьяк<span class="position">Певица, ведущая @tatyanatretyak.ru</span></div>
 					</div>
 				</div>
 				</div>
@@ -182,11 +196,9 @@
 					<span class="subheading">Discover</span>
 					<h2 class="mb-4">НАШ МЕНЮ</h2>
 					<p class="mb-4">
-						Каждый вечер в PANORAMA – новый этюд, написанный светом люстр, что льется теплым золотом на полированное дерево.
+						Приятная обстановка «Панорамы» всегда вдохновляет на новые свершения и дарит чувство спокойствия
 						<br><br>
-						Ваш сдержанный смех, тихий шепот за столиком – это живые, трепетные мазки, ложащиеся на вечный, нерушимый холст этого места.
-						<br><br>
-						Здесь, в мерцающем полумраке, под аккомпанемент звенящего хрусталя и приглушенного гула бесед, мы пишем историю вместе – неторопливо, изысканно, вечер за вечером, пока последние лучи не растворятся в синеве, а настоящий миг не станет еще одной жемчужиной в ожерелье прошлого. 
+						Проведите сегодня свободные часы в наших уютных интерьерах за чашечкой домашнего чая и кусочком любимого десерта	
 					</p>
 					<p><a href="/menu/" class="btn btn-primary btn-outline-primary px-4 py-3">ПОСМОТРЕТЬ МЕНЮ</a></p>
 				</div>
@@ -292,18 +304,18 @@
 		</div>
 		</section>
 
-    <!-- FOOTER -->
+<!-- FOOTER -->
 		<footer class="ftco-footer ftco-section img">
 			<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 			<div class="col-md-6">
 				<div class="ftco-footer-widget d-flex flex-column">
-				<h2 class="ftco-heading-2" style="margin-bottom: 20px; font-size: 1.5rem;">PANORAMA. Время течет мягко.</h2>
+				<h2 class="ftco-heading-2" style="margin-bottom: 20px; font-size: 1.5rem;">SEKREKOV STUD PROJECT</h2>
 				<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
 					<li class="ftco-animate"><a href="https://t.me/karafco"><span class="icon-telegram"></span></a></li>
-					<li class="ftco-animate"><a href="https://api.whatsapp.com/send/?phone=79653330900&text&type=phone_number&app_absent=0"><span class="icon-whatsapp"></span></a></li>
-					<li class="ftco-animate"><a href="https://www.instagram.com/history.nalchik/"><span class="icon-instagram"></span></a></li>
+					<li class="ftco-animate"><a href="https://api.whatsapp.com/send/?phone=79993001458&text&type=phone_number&app_absent=0"><span class="icon-whatsapp"></span></a></li>
+					<li class="ftco-animate"><a href="https://www.instagram.com/centr_dosuga_panorama/"><span class="icon-instagram"></span></a></li>
 				</ul>
 				<a href="https://okaraf.ru/" class="karaf_tag" style="font-size: 1.2rem;" class="ftco-heading-2" target="_blank">MADE BY <br><div style="font-size: 1.6rem; line-height: 23px;">KARAF</div></a>
 				</div>
@@ -313,9 +325,9 @@
 					<h2 class="ftco-heading-2">Есть вопросы?</h2>
 					<div class="block-23 mb-3">
 					<ul class="">
-						<li class="footer_info_text d-flex align-items-center"><span class="icon icon-map-marker d-flex justify-content-center align-items-center pb-1"></span><span class="text">ул. Кирова, 2Г, Нальчик</span></li>
-						<li class="footer_info_text"><a href="tel://79653330900" class="d-flex align-items-center"><span class="icon icon-phone d-flex justify-content-center align-items-center pb-1"></span><span class="text">+7 (965) 333-09-00</span></a></li>
-						<li class="footer_info_text d-flex align-items-center"><a href="#" class="d-flex align-items-center"><span class="icon icon-envelope d-flex justify-content-center align-items-center"></span><span class="text">info@yourdomain.com</span></a></li>
+						<li class="footer_info_text d-flex align-items-center"><span class="icon icon-map-marker d-flex justify-content-center align-items-center pb-1"></span><span class="text">г. Нальчик, Центральный Парк, 4-ое озеро Курортное</span></li>
+						<li class="footer_info_text"><a href="tel://79993001458" class="d-flex align-items-center"><span class="icon icon-phone d-flex justify-content-center align-items-center pb-1"></span><span class="text">+7 (999) 300-14-58</span></a></li>
+						<li class="footer_info_text d-flex align-items-center"><a href="mailto:panoramanalchik.com" class="d-flex align-items-center"><span class="icon icon-envelope d-flex justify-content-center align-items-center"></span><span class="text">panoramanalchik.com</span></a></li>
 					</ul>
 					</div>
 				</div>
@@ -327,10 +339,6 @@
 		<!-- End of FOOTER -->
     
   
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
 	<script type="module" src="../src/js/bootstrap-datepicker.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js" integrity="sha512-VqTaIU3VlSHylzoMs3hWCBTMZ9l5fvYayp4yzRb5qV9Ne4Z+n21uFoG672gWMcJiedQYZV2KmXF3VkTTsRGRbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script type="module" src="../src/js/jquery.easing.1.3.js"></script>
